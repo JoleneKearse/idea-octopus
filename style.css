@@ -1,0 +1,76 @@
+/* ---------- CUSTOM PROPERTIES ----------*/
+:root {
+    --clr-white: #fff;
+    --clr-black: #000;
+    --gap: 1rem;
+}
+/* ---------- RESET ----------*/
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    width: 100vw;
+    height: 100%;
+}
+body,
+h1,
+p,
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.2;
+    color: #3C1F0C;
+    background: 
+    url('.\\images\\frame.png'),
+        linear-gradient(#FFE8D1, #B89541, #91692F, #67411E);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-position: center center;
+}
+/* ---------- TYPOGRAPHY ----------*/
+h1 {
+    font-size: clamp(1.5rem, 5rem, 10rem);
+    font-weight: 900;
+}
+#text {
+    font-weight: 600;
+    text-align: center;
+    font-style: italic;
+    color: #FFC1A9;
+}
+/* ---------- LAYOUT ----------*/
+.container {
+    display: grid;
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+
+/* ---------- COMPONENTS ----------*/
+button {
+    background: transparent;
+    cursor: pointer;
+}
+
+
+
+/* ---------- MEDIA QUERIES ----------*/
