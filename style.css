@@ -1,8 +1,6 @@
 /* ---------- CUSTOM PROPERTIES ----------*/
 :root {
-    --clr-white: #fff;
-    --clr-black: #000;
-    --gap: 1rem;
+    
 }
 /* ---------- RESET ----------*/
 *,
@@ -96,8 +94,29 @@ button {
     transform: scale(.85);
 }
 /* ---------- MEDIA QUERIES ----------*/
-@media (max-height: 1500px) {
+@media (max-width: 450px) {
     .container {
+        width: 95%;
+    }
+}
+@media (max-height:500px) and (orientation: landscape) {
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-height: 1500px) {
+    .container {
+        height: 50vw;
         max-height: 50%;
+        margin-top: 55vw;
+    }
+    h1 {
+        height: auto;
+    }
+    h1, p, button {
+        margin-top: 1rem;
     }
 }
